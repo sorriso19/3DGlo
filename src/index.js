@@ -1,5 +1,4 @@
-import fistModule from './modules/one'
-import secondModule from './modules/two'
+import timer from './modules/timer'
 
-fistModule();
-secondModule();
+
+timer('21 april 2025');
