@@ -1,5 +1,5 @@
 const fistModule =() => {
-    const one = 'one2'
+    const one = 'one124'
     console.log(one);
 }
 
