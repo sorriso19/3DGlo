@@ -8,7 +8,7 @@ const modalAnimate = () => {
             modal.style.opacity = 'translateX(100%)'
                 let animation, count = 100
                     const transform = () => {
-                        animation = requestAnimationFrame(opacity)
+                        animation = requestAnimationFrame(transform)
                         count--
                         if(count >= 0) {
                             modal.style.transform = `translateX(${count}%)`
