@@ -3,5 +3,5 @@ import menu from './modules/menu'
 import modal from './modules/modal'
 
 timer('21 april 2025');
-menu()
-modal()
+menu();
+modal();
