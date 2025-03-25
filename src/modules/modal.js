@@ -5,7 +5,7 @@ const modalAnimate = () => {
      
      
             modal.style.display = 'block'
-            modal.style.opacity = 'translateX(100%)'
+            modal.style.transform = 'translateX(100%)'
                 let animation, count = 100
                     const transform = () => {
                         animation = requestAnimationFrame(transform)
