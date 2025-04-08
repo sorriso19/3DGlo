@@ -37,4 +37,4 @@ const modalAnimate = () => {
           
         }
    
-export default modal
+export default modalAnimate
