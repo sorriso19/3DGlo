@@ -8,14 +8,12 @@ const validator = () => {
         })
     }
 const userName = document.querySelectorAll(('[name="user_name"]'))
-    userName.addEventListener('input', (e) => {
-        e.target.value = e.target.value.replace()
-        userName.forEach(element => {
+    userName.forEach(element => {
             element.addEventListener('input', (e) => {
-                e.target.value = e.target.value.replace(/^[-а-яА-ЯёЁ\s]+$/g, "")
+                e.target.value = e.target.value.replace(/[^\а-яА-ЯёЁ\sa]+$/g, "")
             })
         })
-})
+
         const userEmail = document.querySelectorAll('.form-email')
         userEmail.forEach(el => {
             el.addEventListener('input', (e) => {
