@@ -1,11 +1,12 @@
 import timer from './modules/timer'
 import menu from './modules/menu'
-import validate from './modules/valid';
+import validator from './modules/validator';
 import modalAnimate from './modules/modal';
-
+import tabs from './modules/tabs';
 
 
 timer('21 april 2025');
 menu();
 modalAnimate();
-validate();
+validator();
+tabs();
