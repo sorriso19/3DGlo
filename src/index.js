@@ -7,6 +7,6 @@ import tabs from './modules/tabs'
 
 timer('21 april 2025');
 menu();
-modalAnimate();
+modal();
 validator();
 tabs();
