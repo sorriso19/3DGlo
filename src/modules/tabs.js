@@ -3,10 +3,19 @@ const tabs = () => {
     const tabs = document.querySelectorAll('.service-header-tab')
     const tabContent = document.querySelectorAll('.service-tab')
 
-   tabPanel.addEventListener('click', (e) => {
-        console.log(e.target);
-   })
-    
-}
+    tabPanel.addEventListener('click', (e) => {
+        if (e.target.classlist.closest('.service-header-tab')) {
+            const tabBtn = e.target.closest('.service-header-tab')
+            console.log(tabBtn);
+            tabs.forEach((tab, index) => {
+                if(tab === e.target) {
+                    tab.classList.add('active')
+                } else {
+                   tab.classList.remove('active') 
+                }
+            })
+        }
+    })
 
+  }
 export default tabs
