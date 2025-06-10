@@ -4,6 +4,7 @@
     const menu = document.querySelector('menu')
     const closeBtn = menu.querySelector('.close-btn')
     const menuItems = menu.querySelectorAll('ul>li>a')
+    const menuItem = menu.querySelectorAll('li')
 
     const handleMenu = () => {
  
@@ -11,11 +12,18 @@
 
     }
 
-   menuBtn.addEventListener('click', handleMenu)
-      
-   closeBtn.addEventListener('click', handleMenu)
+  
      
-   menuItems.forEach(menuItem => {menuItem.addEventListener('click', handleMenu)})
+   menuItems.addEventListener('click', (e) =>  {
+      if (e.target.tagName === 'LI') {
+           menuBtn.addEventListener('click', handleMenu)
+      } else {
+        if (e.target.className === '.close-btn') {
+          closeBtn.addEventListener('click', handleMenu)
+        }
+      }
+   })
 }
+
 
 export default menu
